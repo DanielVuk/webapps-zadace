@@ -6,6 +6,7 @@ Ispis : “web apps vjezbe” -> “webAppsVjezbe”
 
 
 const toCammelCase = (str) =>{
+    let originalStr = str;
     str.toLowerCase()
     let newStr = '';
 
@@ -17,8 +18,7 @@ const toCammelCase = (str) =>{
             newStr+=(str[i].toLowerCase())
         }   
     }
-
-    console.log(newStr);
+    console.log(`"${originalStr}" -> ${newStr}`);
 }
 
 toCammelCase('web ApPs vjeZbe')
